@@ -40,7 +40,7 @@ s.waitForBoot({
 
 	fork { case { MIDIClient.initialized.not } { MIDIClient.init; MIDIIn.connectAll; } };
 
-	"/Users/m4rk/Documents/NIME/implementation/Sep_update/kdtree_funcs.scd".loadPaths; // grab helper funcs
+	"./kdtree_funcs.scd".loadPaths; // grab helper funcs
 	2.0.wait;
 	s.sync;
 
